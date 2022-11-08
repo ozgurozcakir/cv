@@ -1,0 +1,98 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <title>LOGİN</title>
+</head>
+<style>
+    body{
+        margin:0;
+        background-color: antiquewhite;
+
+    }
+</style>
+
+
+    <body id="arka">
+
+
+
+        <img src="" id="img"  width="1300" height="600"/>
+    
+    <script>
+    var text="";// Bunu burda tanımladık fonk. içinde yapsaydık fonl. dışında kullanamazdık
+    function renkyarat(){
+    
+        var a="ABCDF0123456789";
+        text="#";// diez koyduk çünkü renk kodlarının başına diez konuyor.
+    
+        for(i=0; i<6; i++){//6 tane değer alabildiği için 6
+    
+            var random= Math.round(Math.random()*15);
+    
+            text+= a.charAt(random);// string değerleri charat ile random çağırmak.
+        }
+    }
+   
+    
+    
+    var text="";
+    function ressimsec(){
+    
+        var a=["goruntu1.jpg", "goruntu2.jpg", "goruntu3.jpg",
+        "goruntu4.jpg" ,"goruntu5.jpg", "goruntu6.jpg"];
+        text=""; 
+    
+      
+    
+            var random= Math.round(Math.random()*5);
+    
+            text = a[random];
+        }
+    
+    setInterval(function(){
+    
+       ressimsec();
+        document.getElementById("img").src=text;
+    },2000);
+    
+    
+    
+    </script>
+    
+    
+    
+
+    <form action="mailto:agah.ozcakir@gmail.com" method="post" enctype="text/plain">
+
+        <label>Adınız:</label>
+
+<input   type="text" name="Adın:" value="">
+<br>
+<label>Email Adresiniz:</label>
+<input type="email" name="Emailiniz:" value="">
+<br>
+<label>Mesajınız:</label>
+<textarea name="Mesajın:" rows="10" cols="30"></textarea>
+ 
+<input type="submit"  value="Gönder" name=""><br><br><br>
+
+
+    </form>
+
+
+    
+    </form>
+    
+    </body>
+    
+    </html>
+
+
+
+
+
+
+
+
+
+  
